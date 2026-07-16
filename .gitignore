@@ -1,0 +1,11 @@
+# personal data — never committed
+me/*
+!me/profile.template.md
+plans/*
+!plans/example.json
+
+# regenerable NUSMods cache
+data/
+
+node_modules/
+.DS_Store

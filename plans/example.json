@@ -1,0 +1,23 @@
+{
+  "_comment": "Example plan config. Copy to plans/<sem>.json and edit. The agent edits this from natural language; scripts/solve.mjs picks the slots.",
+  "acadYear": "2026-2027",
+  "semester": 1,
+  "modules": ["CS2100", "CS2103T", "CS2109S"],
+  "locked": {},
+  "hard": {
+    "earliestStart": null,
+    "latestEnd": null,
+    "freeDays": [],
+    "avoid": []
+  },
+  "soft": {
+    "noLessonsBefore": { "time": "1000", "weight": 3 },
+    "minimizeDays": { "weight": 5 },
+    "preferFreeDays": { "days": [], "weight": 8 },
+    "lunchBreak": { "weight": 2 },
+    "preferFree": [
+      { "day": "Tuesday", "start": "1200", "end": "1400", "label": "lunch with partner", "weight": 6 }
+    ],
+    "compactness": { "weight": 1 }
+  }
+}
