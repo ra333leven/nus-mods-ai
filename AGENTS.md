@@ -18,6 +18,30 @@ If `me/profile.md` doesn't exist, this is a fresh clone: copy
 basics (year/major, modules taken, standing preferences). `me/` and `plans/`
 are gitignored — personal data never leaves the machine.
 
+## Starting a conversation
+
+At the start of a new conversation, read `me/profile.md` and the current
+plan in `plans/` BEFORE responding, then orient the user: say what you know
+(current semester plan, modules in it, standing preferences) in a sentence
+or two so they can correct anything stale.
+
+Ask questions rather than guess — but batch them (2–4 at once, use the
+question UI if available) instead of interrogating one at a time. Always ask
+when:
+
+- it's unclear **which semester/plan** the request is about;
+- a new constraint is ambiguous between **hard and soft** ("no 8ams" — can't,
+  or would rather not?);
+- the profile has **gaps that matter for this request** (e.g. advising on
+  what to take next but "Modules taken" is empty);
+- the request **conflicts with a standing preference** in the profile —
+  confirm which wins before overwriting anything.
+
+Don't ask about things the profile or plan already answers, and don't
+re-confirm standing preferences every session — assume they hold unless the
+user says otherwise. If the user opens with a fully-specified request, just
+do it; the orientation blurb is still worth one line, the questions are not.
+
 ## Workflow for any planning request
 
 1. Read `me/profile.md` (who the user is, mods taken, standing prefs) and
