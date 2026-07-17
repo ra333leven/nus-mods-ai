@@ -53,6 +53,10 @@ Data comes from the public [NUSMods API](https://api.nusmods.com/v2/) (no
 auth; refreshed daily upstream). Set `ACAD_YEAR` to override the default
 academic year in the scripts.
 
+## Contributing
+
+please dont contribute, just fork ts
+
 ## License
 
 MIT
