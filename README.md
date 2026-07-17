@@ -22,13 +22,15 @@ claude
 > plan my semester
 ```
 
+Or open the folder in the Claude Code desktop app and start talking.
+
 That's it. On first run the agent interviews you (year, major, modules
 taken, preferences), saves a profile, and remembers it for next time. Then
 just talk: add modules, change constraints, ask what to take next semester,
 match a friend's timetable. Everything personal stays on your machine
 (`me/` and `plans/` are gitignored).
 
-## Why it doesn't hallucinate your timetable
+## How it works
 
 The AI never picks class slots — it only translates your words into a
 constraints file. A small deterministic solver then enumerates every
@@ -51,13 +53,6 @@ natural language ──► agent (extracts constraints) ──► plans/<sem>.js
 Data comes from the public [NUSMods API](https://api.nusmods.com/v2/) (no
 auth; refreshed daily upstream). Set `ACAD_YEAR` to override the default
 academic year in the scripts.
-
-## For the curious
-
-You can also run the scripts by hand (`scripts/fetch.mjs`,
-`scripts/solve.mjs`, `scripts/import-link.mjs`) and edit the constraint
-JSON yourself — see [AGENTS.md](AGENTS.md) for the schema and full
-workflow. But the whole point is that you shouldn't have to.
 
 ## License
 
