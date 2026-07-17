@@ -36,8 +36,21 @@ clash-free timetable from real NUSMods data, ranks them by your
 preferences, and produces the share link. The AI explains the tradeoffs;
 the solver guarantees the schedule is valid.
 
-Data comes from the public [NUSMods API](https://api.nusmods.com/v2/),
-cached locally.
+```
+natural language ──► agent (extracts constraints) ──► plans/<sem>.json
+                                                          │
+                       data/ (cached NUSMods API) ────────┤
+                                                          ▼
+                                      scripts/solve.mjs (deterministic DFS
+                                      + clash pruning + weighted scoring)
+                                                          │
+                                                          ▼
+                                      NUSMods share link ──► import & view
+```
+
+Data comes from the public [NUSMods API](https://api.nusmods.com/v2/) (no
+auth; refreshed daily upstream). Set `ACAD_YEAR` to override the default
+academic year in the scripts.
 
 ## For the curious
 
