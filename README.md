@@ -1,8 +1,7 @@
 # nus-mods-ai
 
-Tell an AI what you want your NUS semester to look like. Get back a
-clash-free timetable as a [NUSMods](https://nusmods.com) link you can
-import and view.
+Tell an AI what you want your NUS semester to look like, get back a
+[NUSMods](https://nusmods.com) link.
 
 ```
 "I'm taking CS2106, CS2109S and CS2103T. No classes before 10,
